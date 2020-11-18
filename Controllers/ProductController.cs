@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SportStore.Models.Repository;
+using SportStore.Models.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ namespace SportStore.Controllers
 
         public ProductController(IProductRepository repo)
         {
-            repo = repository;
+            repository = repo;
         }
 
         public IActionResult List() => View(repository.Products);

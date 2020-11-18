@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SportStore.Models.Repository
+namespace SportStore.Models.Interface
 {
     public interface IProductRepository
     {
